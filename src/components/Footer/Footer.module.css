@@ -1,9 +1,4 @@
-
-/*  */
-/* Footer */
-/*  */
-
-footer {
+.footer {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -19,26 +14,15 @@ footer {
     margin: 0 0 0 0;
     z-index: 2;
     background-color: black;
-    filter: brightness(1);
-    width: 130px;
-    padding-bottom: 20px;
+    width: 122px;
+    padding-bottom: 50px;
 }
 
 .copyrightFooter {
-    /* padding-bottom: 20px; */
+    padding-bottom: 35px;
     font-size: 24px;
     font-weight: 400;
 }
-
-/*  */
-/* Footer */
-/*  */
-
-
-
-
-
-
 
 /*  */
 /*  */
@@ -46,14 +30,9 @@ footer {
 /*  */
 /*  */
 
+@media screen and (max-width: 722px) {
 
 
-
-
-
-@media screen and (max-width: 615px) {
-
-   
 
     /* footer */
     footer {
@@ -62,9 +41,20 @@ footer {
     }
 
     .copyrightFooter {
-        font-size: 12px;
+        font-size: 16px;
     }
 }
 
 
+@media screen and (max-width: 495px) {
 
+    .footerLogo {
+
+        padding-bottom: 28px;
+    }
+
+    .copyrightFooter {
+        font-size: 12px;
+        padding-bottom: 65px;
+    }
+}

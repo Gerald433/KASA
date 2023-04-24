@@ -5,7 +5,7 @@ import styles from "./Footer.module.css";
 const Footer = function () {
   console.log("toto")
   return (
-    <footer>
+    <footer className={styles.footer}>
         <img
           className={styles.footerLogo}
           src={logoFooter}
