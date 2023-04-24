@@ -1,0 +1,111 @@
+
+
+/*  */
+/* header */
+/*  */
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navClass {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.elementList{
+    width: 160px;
+    text-align: end;
+}
+
+
+.link {
+    width: 250px;
+    text-decoration: none;
+    color: rgb(255, 96, 96);
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.link:hover {
+    text-decoration-line: underline;
+}
+
+/*  */
+/* header */
+/*  */
+
+/*  */
+/*  */
+/* responsive */
+/*  */
+/*  */
+
+
+
+/* 
+@media screen and (max-width: 950px) {
+
+    
+    .link {
+        text-decoration: none;
+        color: rgb(255, 96, 96);
+      
+    }
+
+
+} */
+
+
+@media screen and (max-width: 615px) {
+
+    /* header */
+    .logoPrincipal {
+        width: 170px
+    }
+
+    .elementList{
+        width: 115px;
+    }
+
+    .link {
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    
+}
+
+
+
+
+@media screen and (max-width: 407px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .elementList{
+        text-align: center;
+    }
+
+    .link {
+        font-size: 12px;
+        margin-left: 0px;
+    }
+
+    .navClass {
+        max-width: 190px;
+        justify-content: space-around;
+    }
+
+  
+}
