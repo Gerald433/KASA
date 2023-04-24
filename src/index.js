@@ -4,7 +4,8 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import resetCss from "./assets/css/reset.module.css"
+import Error from "./pages/Error/Error";
+import resetCss from "./assets/css/reset.module.css";
 import generalCss from "./assets/css/general.module.css";
 
 
@@ -13,12 +14,12 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Header />
-    {/* <Routes>
+    <Routes>
       <Route path="*" element={<Error />}/>
-      <Route path="/" element={<Home />}/>
+      {/* <Route path="/" element={<Home />}/>
       <Route path="/card/:cardId" element={<Card />}/>
-      <Route path="/a-propos" element={<Apropos />}/>
-    </Routes> */}
+      <Route path="/a-propos" element={<Apropos />}/> */}
+    </Routes>
     <Footer />
   </BrowserRouter>
 );
