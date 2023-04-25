@@ -16,8 +16,8 @@ root.render(
   <BrowserRouter>
     <Header />
     <Routes>
-      {/* <Route path="*" element={<Error />}/>
-      <Route path="/" element={<Home />}/>
+      <Route path="*" element={<Error />}/>
+      {/* <Route path="/" element={<Home />}/>
       <Route path="/card/:cardId" element={<Card />}/> */}
       <Route path="/a-propos" element={<Apropos />}/>
     </Routes>
