@@ -4,15 +4,13 @@ import styles from "./Banner.module.css";
 
 const Banner = function () {
   return (
-    <main>
-      <section className={styles.pubSiteSection}>
-        <img
-          className={styles.photoPubSite}
-          src={background2}
-          alt="photo de chaine de montagne et de forets."
-        />
-      </section>
-    </main>
+    <section className={styles.pubSiteSection}>
+      <img
+        className={styles.photoPubSite}
+        src={background2}
+        alt="photo de chaine de montagne et de forets."
+      />
+    </section>
   );
 };
 
