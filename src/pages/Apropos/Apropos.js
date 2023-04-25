@@ -6,7 +6,7 @@ const Apropos = function () {
   return (
     <main>
       <Banner />
-      {/* <Accordeon /> */}
+      <Accordeon />
     </main>
       
   );
