@@ -17,8 +17,8 @@
 .cardTable {
     border-radius: 25px 25px 0px 0;
     background-color: rgb(246, 246, 246);
-    padding: 50px;
-    margin: 30px 100px 0 100px;
+    padding: 56px 50px 56px 50px;
+    margin: 43px 100px 0 100px;
 }
 
 /*  */
@@ -26,14 +26,35 @@
 /* responsive */
 /*  */
 /*  */
+
+@media screen and (max-width: 1140px) {
+    .cardTable {
+
+        margin: 30px 50px 0 50px;
+    }
+
+
+}
+
+
 @media screen and (max-width: 950px) {
     .titlePubSite {
         font-size: 30px;
+    }
+
+    .cardTable {
+        padding: 20px;
+
     }
 }
 
 @media screen and (max-width: 722px) {
     .titlePubSite {
         font-size: 24px;
+    }
+
+    .cardTable {
+
+        margin: 30px 10px 0 10px;
     }
 }
