@@ -5,9 +5,7 @@ import { Link } from "react-router-dom";
 
 const Thumb = function () {
   const [cards, setCards] = useState([]);
-  console.log("toto");
   useEffect(() => {
-    console.log("tata");
     async function fetchCards() {
       try {
         const _cards = await (await fetch("/data/logements.json")).json();
@@ -25,9 +23,6 @@ const Thumb = function () {
         {cards.map((card) => {
           return (
             <li className={styles.card} key={card.id}>
-              <div className={styles.zozo}>
-
-              </div>
               <Link to={`/card/${card.id}`} className={styles.linkImage}>
                 <img
                   src={card.cover}
