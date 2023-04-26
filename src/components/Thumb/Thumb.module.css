@@ -11,7 +11,6 @@
     background: rgb(255, 0, 0) linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
     aspect-ratio: 1/1;
     height: auto;
-    
     overflow: hidden;
     border-radius: 10px;
 }
@@ -21,20 +20,23 @@
     aspect-ratio: 1/1;
     height: auto;
     object-fit: cover;
+}
+
+.linkImage {
+    width: 300px;
     position: relative;
 }
 
 .title {
-    width: 250px;
-    /* height: 50px; */
+    height: 100px;
+    align-items: end;
     color: white;
     font-size: 18px;
     font-weight: 400;
-    /* padding: 0 0 20px 20px; */
     line-height: 30px;
-    position: sticky;
-    left: ;
-    top: ;
+    position: absolute;
+    left: 15px;
+    top: -95px;
     z-index: 1;
     margin: 0 0 0 0;
     display: flex;
@@ -64,5 +66,19 @@
     .card {
         width: 100%;
         aspect-ratio: 1.4/1;
+    }
+
+    .linkImage {
+        width: 300px;
+    }
+
+    .title {
+        height: 100px;
+        position: absolute;
+        left: 20px;
+        top: -220px;
+        z-index: 1;
+        display: flex;
+        flex-wrap: wrap;
     }
 }
