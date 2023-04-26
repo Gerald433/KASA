@@ -20,20 +20,27 @@ const Thumb = function () {
   }, []);
 
   return (
-    <ul className={styles.containerItems}>
-      {cards.map((card) => {
-        return (
-          <li className={styles.card} key={card.id}>
-            <article>
+    <section className={styles.section}>
+      <ul className={styles.containerItems}>
+        {cards.map((card) => {
+          return (
+            <li className={styles.card} key={card.id}>
+              <div className={styles.zozo}>
+
+              </div>
               <Link to={`/card/${card.id}`} className={styles.linkImage}>
-                <img src={card.cover} alt={card.title} className={styles.imageCard} />
-                <h2 className={styles.itemTitle}>{card.title}</h2>
+                <img
+                  src={card.cover}
+                  alt={card.title}
+                  className={styles.imageCard}
+                />
+                <h2 className={styles.title}>{card.title}</h2>
               </Link>
-            </article>
-          </li>
-        );
-      })}
-    </ul>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
   );
 };
 
