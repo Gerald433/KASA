@@ -72,13 +72,21 @@ article {
 /*  */
 /*  */
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1140px) {
 
  
 
     .card {
+        max-width: 50%;
         width: 47%;
     }
+}
+
+
+@media screen and (max-width: 950px) {
+
+ 
+
 }
 
 
