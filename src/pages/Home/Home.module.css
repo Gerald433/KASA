@@ -11,7 +11,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    
+
 }
 
 .cardTable {
@@ -49,6 +49,17 @@
 }
 
 @media screen and (max-width: 722px) {
+    .titlePubSite {
+        font-size: 24px;
+    }
+
+    .cardTable {
+
+        margin: 30px 10px 0 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
     .titlePubSite {
         font-size: 24px;
     }
