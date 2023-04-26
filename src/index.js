@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer";
 import Error from "./pages/Error/Error";
 import Apropos from "./pages/Apropos/Apropos";
 import Home from "./pages/Home/Home";
+import Card from "./pages/Card/Card";
 import resetCss from "./assets/css/reset.module.css";
 import generalCss from "./assets/css/general.module.css";
 
@@ -19,7 +20,7 @@ root.render(
     <Routes>
       <Route path="*" element={<Error />}/>
       <Route path="/" element={<Home />}/>
-      {/* <Route path="/card/:cardId" element={<Card />}/> */}
+      <Route path="/card/:cardId" element={<Card />}/>
       <Route path="/a-propos" element={<Apropos />}/>
     </Routes>
     <Footer />
