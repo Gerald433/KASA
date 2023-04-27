@@ -1,18 +1,16 @@
 import React from "react";
 import styles from "./Accordeon.module.css";
 
-const Accordeon = function () {
+const Accordeon = function (props) {
   return (
     <section className={styles.quality}>
       <details className={styles.details}>
-        <summary className={styles.summary}>Fiabilité</summary>
-        <p className={styles.accordeonText}>
-          Les annonces postées sur Kasa garantissent une fiabilité totale. Les
-          photos sont conformes aux logements, et toutes les informations sont
-          régulièrement vérifiées par nos équipes.
-        </p>
+        <summary className={styles.summary}>{props.title}</summary>
+        <div className={styles.accordeonText}>
+          {props.children}
+        </div>
       </details>
-      <details className={styles.details}>
+      {/* <details className={styles.details}>
         <summary className={styles.summary}>Respect</summary>
         <p className={styles.accordeonText}>
           La surveillance fait partie des valeurs fondatrices de Kasa. Tout
@@ -38,7 +36,7 @@ const Accordeon = function () {
           standards sont bien respectés. Nous organisons également des ateliers
           sur la sécurité domestique pour nos hôtes.
         </p>
-      </details>
+      </details> */}
     </section>
   );
 };
