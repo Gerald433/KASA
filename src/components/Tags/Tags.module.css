@@ -1,13 +1,14 @@
 .advantageList {
-    width: 360px;
+    /* width: 360px; */
     align-items: center;
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .advantage {
     display: flex;
-    /* width: 115px; */
+    flex-wrap: nowrap;
     padding: 0 20px 0 20px;
     height: 25px;
     background-color: rgb(255, 96, 96);
@@ -63,6 +64,17 @@
         gap: 5px;
     }
 
-   
+    @media screen and (max-width: 272px) {
+        .advantageList{
+            
+            width: 100%;
+            flex-direction: column;
+        }
 
+
+        .advantage{
+            min-width: 190px;
+            margin: 0 10px 0 10px;
+        }
+    }
 }
