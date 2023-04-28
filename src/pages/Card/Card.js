@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import styles from "./Card.module.css";
 import Tags from "../../components/Tags/Tags";
+import Star from "../../components/Star/Star";
 import Accordeon from "../../components/Accordeon/Accordeon";
-
 
 const Card = function () {
   const [card, setCard] = useState(null);
@@ -15,7 +15,7 @@ const Card = function () {
     async function fetchCard() {
       try {
         const _cards = await (await fetch("/data/logements.json")).json();
-        
+
         const cardFound = _cards.find((_card) => _card.id === cardId);
         console.log(_cards);
         setCard(cardFound);
@@ -53,43 +53,30 @@ const Card = function () {
               <img
                 className={styles.disc}
                 src={card?.host.picture}
-                alt="disque gris plein"
+                alt="Photo de l'auteur"
               />
             </div>
 
             <div className={styles.listStarOff}>
-              <img
-                className={styles.starOff}
-                src={card?.rating}
-                alt="étoile de vote non sélectionnée"
-              />
-              <img
-                className={styles.starOff}
-                src="/src/assets/greyStar.svg"
-                alt="étoile de vote non sélectionnée"
-              />
-              <img
-                className={styles.starOff}
-                src="/src/assets/greyStar.svg"
-                alt="étoile de vote non sélectionnée"
-              />
-              <img
-                className={styles.starOff}
-                src="/src/assets/greyStar.svg"
-                alt="étoile de vote non sélectionnée"
-              />
-              <img
-                className={styles.starOff}
-                src="/src/assets/greyStar.svg"
-                alt="étoile de vote non sélectionnée"
-                
-              />
+              <Star />
+              <Star />
+              <Star />
+              <Star />
             </div>
+
           </div>
         </div>
       </section>
 
-      <Accordeon src={card?.description} title={card?.key}/>
+      <section className={styles.containerGlobalAccordeon}>
+        <Accordeon  title="Description" className={styles.Accordeon} >{card?.description}</Accordeon>
+
+        <Accordeon title="Equipements" className={styles.Accordeon}>
+          <ul className={styles.equipementList}>
+            <li className={styles.equipements}>{card?.equipments}</li>
+          </ul>
+        </Accordeon>
+      </section>
     </React.Fragment>
   );
 };
