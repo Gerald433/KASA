@@ -14,6 +14,7 @@ const Apropos = function () {
           régulièrement vérifiées par nos équipes.
         </p>
       </Accordeon>
+
       <Accordeon title="Respect">
         <p>
           La surveillance fait partie des valeurs fondatrices de Kasa. Tout
@@ -21,6 +22,7 @@ const Apropos = function () {
           entraînera une exclusion de notre plateforme.
         </p>
       </Accordeon>
+
       <Accordeon title="Service">
         <p>
           Nos équipes se tiennent à votre disposition pour vous fournir une
@@ -28,6 +30,7 @@ const Apropos = function () {
           moindre question.
         </p>
       </Accordeon>
+      
       <Accordeon title="Sécurité">
         <p>
           La sécurité est la priorité de kasa. Aussi bien pour nos hôtes que
