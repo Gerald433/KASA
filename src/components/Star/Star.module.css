@@ -1,0 +1,16 @@
+.starOff {
+    width: 30px;
+}
+
+@media screen and (max-width: 950px) {
+    .listStarOff {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .starOff {
+        width: 15px;
+    }
+}
