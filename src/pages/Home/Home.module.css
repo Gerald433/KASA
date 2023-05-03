@@ -44,7 +44,7 @@
 
     .cardTable {
         padding: 20px;
-
+        margin: 30px 10px 0 10px;
     }
 }
 
@@ -53,21 +53,18 @@
         font-size: 24px;
     }
 
-    .cardTable {
-
-        margin: 30px 10px 0 10px;
-    }
+    
 }
 
 @media screen and (max-width: 500px) {
-   
+
 
     .cardTable {
 
-        margin: 0px 0px 0 0px;
+        margin: 0px 0px 0px 0px;
         padding: 30px 10px 30px 10px;
         background-color: rgb(255, 255, 255);
     }
 
-    
+
 }
