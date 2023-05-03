@@ -6,7 +6,7 @@ import background2 from "../../assets/images/kalen-emsley-Bkci_8qcdvQ-unsplash 2
 const Apropos = function () {
   return (
     <main>
-      <Banner src={background2} />
+      <Banner src={background2} large/>
       <Accordeon title="Fiabilité">
         <p>
           Les annonces postées sur Kasa garantissent une fiabilité totale. Les
