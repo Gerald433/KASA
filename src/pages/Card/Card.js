@@ -4,22 +4,19 @@ import styles from "./Card.module.css";
 import Tags from "../../components/Tags/Tags";
 import Star from "../../components/Star/Star";
 import Accordeon from "../../components/Accordeon/Accordeon";
+import Carroussel from "../../components/Carroussel/Carroussel";
 
 const Card = function () {
   const [card, setCard] = useState(null);
   const { cardId } = useParams();
-  console.log(cardId);
+  const range = [1, 2, 3, 4, 5];
 
   useEffect(() => {
-    console.log("tata");
     async function fetchCard() {
       try {
         const _cards = await (await fetch("/data/logements.json")).json();
-
         const cardFound = _cards.find((_card) => _card.id === cardId);
-        console.log(_cards);
         setCard(cardFound);
-        console.log(cardFound.description);
       } catch (error) {
         console.error(error);
       }
@@ -30,13 +27,8 @@ const Card = function () {
   return (
     <React.Fragment>
       <section className={styles.presentation}>
-        <p>
-          <img
-            src={card?.cover}
-            className={styles.photo}
-            alt="photo d'un appartement bien décoré"
-          />
-        </p>
+
+        <Carroussel photos={card?.pictures ?? []} />
 
         <div className={styles.global}>
           <div className={styles.renseignements}>
@@ -58,22 +50,25 @@ const Card = function () {
             </div>
 
             <div className={styles.listStarOff}>
-              <Star />
-              <Star />
-              <Star />
-              <Star />
+              {range.map((rate) =>
+                card?.rating > rate ? <Star cheked key={rate} /> : <Star />
+              )}
             </div>
-
           </div>
         </div>
       </section>
 
       <section className={styles.containerGlobalAccordeon}>
-        <Accordeon  title="Description" className={styles.Accordeon} >{card?.description}</Accordeon>
+        <Accordeon title="Description" summaryNextTo>
+          {card?.description}
+        </Accordeon>
 
-        <Accordeon title="Equipements" className={styles.Accordeon}>
+        <Accordeon title="Equipements" summaryNextTo>
           <ul className={styles.equipementList}>
-            <li className={styles.equipements}>{card?.equipments}</li>
+            {card?.equipments.map((equipement, index) => (
+              <li key={index}>{equipement}</li>
+            ))}
+            
           </ul>
         </Accordeon>
       </section>
