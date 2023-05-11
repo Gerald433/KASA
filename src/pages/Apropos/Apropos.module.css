@@ -1,0 +1,44 @@
+.accordeonsBloc{
+    margin: 0 200px 150px 200px;
+    
+}
+
+.accordeonApropos{
+    margin-top: 20px;
+}
+
+/*  */
+/*  */
+/* responsive */
+/*  */
+/*  */
+@media screen and (max-width: 1140px) {
+
+    .accordeonsBloc {
+        margin: 30px 150px 150px 150px;
+    }
+}
+
+
+@media screen and (max-width: 950px) {
+
+    .accordeonsBloc {
+        margin: 30px 100px 150px 100px;
+    }
+}
+
+@media screen and (max-width: 722px) {
+
+    .accordeonsBloc {
+        margin: 30px 50px 150px 50px;
+    }
+}
+
+
+
+@media screen and (max-width: 495px) {
+
+    .accordeonsBloc {
+        margin: 10px 10px 150px 10px;
+    }
+}
