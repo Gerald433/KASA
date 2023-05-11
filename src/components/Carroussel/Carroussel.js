@@ -5,7 +5,6 @@ import vectorRight from "../../assets/images/vectorRight.svg";
 import { useState } from "react";
 
 const Carroussel = function ({ photos }) {
-  console.log(photos);
   const [index, setIndex] = useState(0);
 
   return (

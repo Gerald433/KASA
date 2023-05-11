@@ -1,9 +1,8 @@
-.accordeonsBloc{
+.accordeonsBloc {
     margin: 0 200px 150px 200px;
-    
 }
 
-.accordeonApropos{
+.accordeonApropos {
     margin-top: 20px;
 }
 
@@ -18,7 +17,6 @@
         margin: 30px 150px 150px 150px;
     }
 }
-
 
 @media screen and (max-width: 950px) {
 

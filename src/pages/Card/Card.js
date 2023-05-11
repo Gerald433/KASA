@@ -27,7 +27,6 @@ const Card = function () {
   return (
     <React.Fragment>
       <section className={styles.presentation}>
-
         <Carroussel photos={card?.pictures ?? []} />
 
         <div className={styles.global}>
@@ -68,7 +67,6 @@ const Card = function () {
             {card?.equipments.map((equipement, index) => (
               <li key={index}>{equipement}</li>
             ))}
-            
           </ul>
         </Accordeon>
       </section>

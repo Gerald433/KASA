@@ -3,7 +3,6 @@ import React from "react";
 import styles from "./Banner.module.css";
 
 const Banner = function ({ src, large }) {
-  console.log(large);
   return (
     <section
       className={

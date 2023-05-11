@@ -8,7 +8,7 @@ const Home = function () {
   return (
     <Fragment>
       <section className={styles.pubSiteSection}>
-        <Banner src={background} pubSiteSection/>
+        <Banner src={background} pubSiteSection />
         <h1 className={styles.titlePubSite}>Chez vous, partout et ailleurs</h1>
       </section>
       <section className={styles.cardTable}>

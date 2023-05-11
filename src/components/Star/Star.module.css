@@ -1,7 +1,3 @@
-/* .starOff {
-    width: 30px;
-} */
-
 @media screen and (max-width: 950px) {
     .listStarOff {
         display: flex;

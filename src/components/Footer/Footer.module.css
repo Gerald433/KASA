@@ -29,12 +29,7 @@
 /* responsive */
 /*  */
 /*  */
-
 @media screen and (max-width: 722px) {
-
-
-
-    /* footer */
     footer {
         justify-content: center;
         align-items: center;
@@ -45,11 +40,9 @@
     }
 }
 
-
 @media screen and (max-width: 495px) {
 
     .footerLogo {
-
         padding-bottom: 28px;
     }
 

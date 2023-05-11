@@ -3,7 +3,6 @@ import logoFooter from "../../assets/images/logoWhite.svg"
 import styles from "./Footer.module.css";
 
 const Footer = function () {
-  console.log("toto")
   return (
     <footer className={styles.footer}>
         <img

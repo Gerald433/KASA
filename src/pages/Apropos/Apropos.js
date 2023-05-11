@@ -9,7 +9,7 @@ const Apropos = function () {
     <main>
       <Banner src={background2} large />
       <div className={styles.accordeonsBloc}>
-        <Accordeon title="Fiabilité"  className={styles.accordeonApropos}>
+        <Accordeon title="Fiabilité" className={styles.accordeonApropos}>
           <p>
             Les annonces postées sur Kasa garantissent une fiabilité totale. Les
             photos sont conformes aux logements, et toutes les informations sont
