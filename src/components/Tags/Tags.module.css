@@ -18,7 +18,7 @@
     font-weight: 400;
     justify-content: center;
     align-items: center;
-    display: flex;
+
 }
 
 .note {
@@ -50,7 +50,7 @@
 
     .advantage {
         font-size: 10px;
-        width: 84px;
+        /* width: 84px; */
         height: 18px;
         gap: 10px;
     }
@@ -69,11 +69,13 @@
             margin: 0 0px 0 10px;
             width: 100%;
             flex-direction: column;
+            justify-content: center;
+            
         }
 
 
         .advantage{
-            min-width: 190px;
+            /* min-width: 190px; */
             margin: 0 10px 0 10px;
         }
     }

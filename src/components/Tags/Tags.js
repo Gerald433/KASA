@@ -6,8 +6,8 @@ const Tags = function ({ tags }) {
   return (
     <div className={styles.note}>
       <ul className={styles.advantageList}>
-        {tags.map((tag) => (
-          <li className={styles.advantage}>{tag}</li>
+        {tags.map((tag, index) => (
+          <li className={styles.advantage} key={index}>{tag}</li>
         ))}
       </ul>
     </div>
