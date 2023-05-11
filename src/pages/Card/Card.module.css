@@ -1,10 +1,9 @@
-.photo{
-    margin: 30px 100px 0 100px
-}
+
 
 .presentation {
     display: flex;
     flex-direction: column;
+    margin: 30px 100px 0 100px;
 }
 
 .titlePrincipal {
@@ -25,6 +24,7 @@
 
 .disc {
     width: 64px;
+    border-radius: 50%;
 }
 
 .greyPoint {
@@ -49,12 +49,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 0px;
+    
     padding-top: 10px;
 }
 
+.listStarOff{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
 .localisation {
-    width: 180px;
+  
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -67,12 +73,6 @@
     justify-content: space-between;
 }
 
-
-
-.starOff {
-    width: 30px;
-}
-
 .note {
     display: flex;
     justify-content: space-between;
@@ -80,6 +80,45 @@
 
 
 
+.containerGlobalAccordeon{
+    
+    margin: 30px 100px 30px 100px;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+}
+
+.sliderContainer{
+    height: 415px;
+    
+    overflow: hidden;
+}
+
+.slider{
+    display: flex;
+    
+}
+
+.slide{
+    width: 100%;
+    flex-grow: 1;
+}
+
+/* .Accordeon{
+    width: 10%;
+} */
+
+.details{
+    background-color: blanchedalmond;
+}
+
+
+.equipementList{
+    display: flex;
+    flex-direction: column;
+}
 
 
 /*  */
@@ -87,10 +126,16 @@
 /* responsive */
 /*  */
 /*  */
+@media screen and (max-width: 1140px) {
+
+    .presentation, .containerGlobalAccordeon {
+        margin: 30px 50px 30px 50px;
+    }
+
+    
+}
 
 @media screen and (max-width: 950px) {
-
-   
 
     .global {
         flex-direction: column;
@@ -104,17 +149,22 @@
         justify-content: space-between;
         margin-top: 10px;
     }
-
-    .listStarOff {
-        display: flex;
-        flex-direction: row;
-    }
-
-    
-
 }
 
 
+@media screen and (max-width: 722px) {
+
+    .presentation, .containerGlobalAccordeon {
+        margin: 30px 10px 30px 10px;
+    }
+
+    .photo{
+        width: 100%;
+        height: 255px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
 
 @media screen and (max-width: 479px) {
 
@@ -122,8 +172,6 @@
         margin-left: 20px;
         margin-right: 20px;
     }
-
-    
 
     .autor {
         width: 50px;
@@ -136,14 +184,9 @@
         margin-bottom: 15px;
     }
 
-    .starOff {
-        width: 15px;
-    }
-
     .disc {
         width: 32px;
     }
-
     
     .titlePrincipal {
         font-size: 18px;
@@ -154,9 +197,16 @@
         width: 110px;
     }
 
+    .containerGlobalAccordeon{
+        flex-direction: column;
+    }
+
+    .listStarOff{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
 }
-
-
 
 @media screen and (max-width: 407px) {
 
