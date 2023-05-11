@@ -1,17 +1,14 @@
 import React from "react";
 import styles from "./Accordeon.module.css";
 
-const Accordeon = function (props) {
+const Accordeon = function ({ title, children, className }) {
+
   return (
-    <section className={styles.quality}>
-      <details className={styles.details}>
-        <summary className={styles.summary}>{props.title}</summary>
-        <div className={styles.accordeonText}>
-          {props.children}
-        </div>
-      </details>
- 
-    </section>
+    <details className={styles.details + " " + className}>
+      <summary className={styles.summary}>{title}</summary>
+
+      <div className={styles.accordeonText}>{children}</div>
+    </details>
   );
 };
 
