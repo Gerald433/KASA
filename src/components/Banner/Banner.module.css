@@ -1,6 +1,6 @@
 .pubSiteSection {
     margin: 30px 100px 0 100px;
-    height: 223px;
+    
 }
 
 .photoPubSite {
@@ -12,6 +12,7 @@
     background-color: rgb(0, 0, 0);
     filter: brightness(0.7);
     object-fit: cover;
+    height: 223px;
 }
 
 /*  */
