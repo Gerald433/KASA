@@ -8,24 +8,21 @@ import Error from "./pages/Error/Error";
 import Apropos from "./pages/Apropos/Apropos";
 import Home from "./pages/Home/Home";
 import Card from "./pages/Card/Card";
-import resetCss from "./assets/css/reset.module.css";
-import generalCss from "./assets/css/general.module.css";
-
-
+import "./assets/css/reset.css";
+import "./assets/css/general.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Header />
     <Routes>
-      <Route path="*" element={<Error />}/>
-      <Route path="/" element={<Home />}/>
-      <Route path="/card/:cardId" element={<Card />}/>
-      <Route path="/a-propos" element={<Apropos />}/>
+      <Route path="*" element={<Error />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/card/:cardId" element={<Card />} />
+      <Route path="/a-propos" element={<Apropos />} />
     </Routes>
     <Footer />
   </BrowserRouter>
 );
-
 
 reportWebVitals();
