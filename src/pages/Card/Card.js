@@ -49,9 +49,9 @@ const Card = function () {
             </div>
 
             <div className={styles.listStarOff}>
-              {range.map((rate) =>
-                card?.rating > rate ? <Star cheked key={rate} /> : <Star />
-              )}
+              {range.map((rate, index) => (
+                <Star cheked={card?.rating > rate} key={index} />
+              ))}
             </div>
           </div>
         </div>
