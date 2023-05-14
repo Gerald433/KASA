@@ -14,7 +14,7 @@ const Banner = function ({ src, large }) {
       <img
         className={styles.photoPubSite}
         src={src}
-        alt="photo de chaine de montagne et de forets."
+        alt="Chaine de montagne et de forets."
       />
     </section>
   );

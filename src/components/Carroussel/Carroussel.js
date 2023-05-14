@@ -17,13 +17,13 @@ const Carroussel = function ({ photos }) {
               setIndex(index === 0 ? photos.length - 1 : index - 1)
             }
           >
-            <img src={vectorLeft} />
+            <img src={vectorLeft} alt="Sélecteur gauche" />
           </button>
           <button
             className={[styles.button, styles.buttonRight].join(" ")}
             onClick={() => setIndex((index + 1) % photos.length)}
           >
-            <img src={vectorRight} />
+            <img src={vectorRight} alt="Sélecteur droit" />
           </button>
         </Fragment>
       )}
@@ -34,7 +34,7 @@ const Carroussel = function ({ photos }) {
       >
         {photos.map((photo, index) => (
           <li key={index} className={styles.slide}>
-            <img src={photo} className={styles.photo} />
+            <img src={photo} className={styles.photo} alt={"photo " + index} />
           </li>
         ))}
       </ul>
