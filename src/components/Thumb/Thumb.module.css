@@ -1,11 +1,3 @@
-.containerItems {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
 .card {
     width: calc((100% - 60px)/3);
     aspect-ratio: 1/1;
