@@ -3,6 +3,12 @@ import styles from "./Star.module.css";
 import starOn from "../../assets/images/redStar.svg";
 import starOff from "../../assets/images/greyStar.svg";
 
+/**
+ *
+ * @param {object} props
+ * @param {boolean} props.checked
+ * @returns
+ */
 const Star = function ({ cheked }) {
   return (
     <div className={styles.listStarOff}>
