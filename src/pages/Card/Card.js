@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import styles from "./Card.module.css";
 import Tags from "../../components/Tags/Tags";
 import Star from "../../components/Star/Star";
@@ -8,6 +8,7 @@ import Carroussel from "../../components/Carroussel/Carroussel";
 
 const Card = function () {
   const [card, setCard] = useState(null);
+  const navigate = useNavigate();
   const { cardId } = useParams();
   const range = [1, 2, 3, 4, 5];
 
@@ -16,13 +17,17 @@ const Card = function () {
       try {
         const _cards = await (await fetch("/data/logements.json")).json();
         const cardFound = _cards.find((_card) => _card.id === cardId);
+        if (!cardFound) {
+          navigate("/error");
+          return;
+        }
         setCard(cardFound);
       } catch (error) {
         console.error(error);
       }
     }
     fetchCard();
-  }, []);
+  }, [cardId, navigate]);
 
   return (
     <React.Fragment>
@@ -44,13 +49,13 @@ const Card = function () {
               <img
                 className={styles.disc}
                 src={card?.host.picture}
-                alt="Photo de l'auteur"
+                alt="avatar"
               />
             </div>
 
             <div className={styles.listStarOff}>
               {range.map((rate, index) => (
-                <Star cheked={card?.rating > rate} key={index} />
+                <Star cheked={card?.rating >= rate} key={index} />
               ))}
             </div>
           </div>
