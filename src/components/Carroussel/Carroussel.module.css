@@ -28,7 +28,7 @@
     cursor: pointer;
     padding: 20px;
     z-index: 1;
-    
+
 }
 
 .buttonRight {
@@ -50,6 +50,10 @@
         border-radius: 10px;
     }
 
+    .photo {
+        height: 255px;
+    }
+
 }
 
 @media screen and (max-width: 479px) {
@@ -57,7 +61,7 @@
         width: 5vw;
     }
 
-    .counter{
+    .counter {
         display: none;
     }
 }
