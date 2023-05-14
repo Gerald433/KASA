@@ -1,7 +1,7 @@
 import React from "react";
 import Banner from "../../components/Banner/Banner";
 import Accordeon from "../../components/Accordeon/Accordeon";
-import background2 from "../../assets/images/kalen-emsley-Bkci_8qcdvQ-unsplash 2 (1).jpg";
+import background2 from "../../assets/images/backgroundAPropos.jpg";
 import styles from "./Apropos.module.css";
 
 const Apropos = function () {
