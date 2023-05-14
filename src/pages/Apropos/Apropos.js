@@ -7,7 +7,7 @@ import styles from "./Apropos.module.css";
 const Apropos = function () {
   return (
     <main>
-      <Banner src={background2} large />
+      <Banner src={background2} large={true} />
       <div className={styles.accordeonsBloc}>
         <Accordeon title="Fiabilité" className={styles.accordeonApropos}>
           <p>
